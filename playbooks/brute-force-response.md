@@ -2,7 +2,16 @@
 
 **Purpose:** Respond to password guessing, password spraying, and credential-stuffing attempts against any login surface.
 
-**Phases:** Detection > Triage > Investigation > Containment > Eradication > Recovery > Lessons Learned
+**Phases:** Preparation > Detection > Triage > Investigation > Containment > Eradication > Recovery > Lessons Learned
+
+## 0. Preparation
+Have these in place before an incident of this type:
+- [ ] Authentication logs from VPN, RDP, SSH, web apps, and email centralized in the SIEM
+- [ ] SIEM rules for failure-count thresholds per account and per source IP
+- [ ] Account lockout and rate-limiting policies documented and enforced
+- [ ] MFA enabled on all internet-facing services
+- [ ] Permission to block IPs at the firewall or WAF without waiting on a change window
+- [ ] Inventory of internet-exposed services
 
 ## 1. Detection
 Common signals that should open this playbook:

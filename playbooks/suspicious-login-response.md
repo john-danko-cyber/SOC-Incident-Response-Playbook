@@ -2,7 +2,16 @@
 
 **Purpose:** Investigate sign-ins that do not match a user's normal behavior and decide quickly whether the account is compromised.
 
-**Phases:** Detection > Triage > Investigation > Containment > Eradication > Recovery > Lessons Learned
+**Phases:** Preparation > Detection > Triage > Investigation > Containment > Eradication > Recovery > Lessons Learned
+
+## 0. Preparation
+Have these in place before an incident of this type:
+- [ ] Identity provider sign-in logs (IP, location, device, user agent) sent to the SIEM
+- [ ] SIEM rules for impossible travel, new countries, and MFA fatigue
+- [ ] Permission to revoke sessions and reset MFA for any user
+- [ ] Conditional access policies and number-matching MFA where possible
+- [ ] An out-of-band way to contact users (phone or chat) to verify logins
+- [ ] Known VPN and corporate egress IPs listed to reduce false positives
 
 ## 1. Detection
 Common signals that should open this playbook:

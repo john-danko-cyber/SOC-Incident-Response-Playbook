@@ -2,7 +2,16 @@
 
 **Purpose:** Limit the spread and impact of ransomware, preserve recovery options, and restore operations from known-good backups.
 
-**Phases:** Detection > Triage > Investigation > Containment > Eradication > Recovery > Lessons Learned
+**Phases:** Preparation > Detection > Triage > Investigation > Containment > Eradication > Recovery > Lessons Learned
+
+## 0. Preparation
+Have these in place before an incident of this type:
+- [ ] Offline or immutable backups, with restores tested on a schedule
+- [ ] EDR policies that block mass encryption and shadow copy deletion
+- [ ] Network segmentation that limits SMB/RDP between segments
+- [ ] A pre-approved isolation authority (who can disconnect servers immediately)
+- [ ] Contact list for leadership, legal, cyber insurance, and law enforcement reporting
+- [ ] Recovery priority list of critical systems
 
 ## 1. Detection
 Common signals that should open this playbook:

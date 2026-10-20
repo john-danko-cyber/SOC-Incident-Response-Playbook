@@ -2,7 +2,16 @@
 
 **Purpose:** Handle reported or detected phishing emails, from a single suspicious message to a credential-harvesting campaign.
 
-**Phases:** Detection > Triage > Investigation > Containment > Eradication > Recovery > Lessons Learned
+**Phases:** Preparation > Detection > Triage > Investigation > Containment > Eradication > Recovery > Lessons Learned
+
+## 0. Preparation
+Have these in place before an incident of this type:
+- [ ] Mail gateway logging retained for at least 90 days, including headers and URL clicks
+- [ ] A user report button wired to a SOC mailbox or ticket queue
+- [ ] Ability to search and purge messages across all mailboxes, with the permission granted in advance
+- [ ] SPF, DKIM, and DMARC configured for your own domains
+- [ ] SIEM rules for lookalike domains and for sign-ins shortly after a URL click
+- [ ] Contact list for the email admin and for user communications
 
 ## 1. Detection
 Common signals that should open this playbook:
