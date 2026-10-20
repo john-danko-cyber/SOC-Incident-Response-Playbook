@@ -2,6 +2,15 @@
 
 Use this checklist alongside any playbook. Tick items as you go and record times in UTC.
 
+## Preparation
+- [ ] Logging enabled and centralized in the SIEM (endpoint, network, identity, email, cloud)
+- [ ] SIEM detection rules in place and tested for each playbook type
+- [ ] EDR deployed on all endpoints with isolation capability
+- [ ] Communication and escalation contacts documented and current
+- [ ] Backups taken, isolated, and restore-tested
+- [ ] Analyst access permissions granted in advance (isolate, purge, reset, block)
+- [ ] Playbooks reviewed and current
+
 ## Detection
 - [ ] Alert source and alert ID recorded
 - [ ] Ticket opened with detection time
