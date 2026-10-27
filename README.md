@@ -1,5 +1,11 @@
 # SOC-Incident-Response-Playbook
 
+## Summary
+Original incident response playbooks for phishing, malware, brute force, ransomware, and suspicious login alerts. Each playbook follows the same eight phases, from Preparation to Lessons Learned, and includes triage fields, escalation criteria, and MITRE ATT&CK mapping. The repo also includes an incident response checklist and a workflow diagram.
+
+## My Role
+I wrote these playbooks myself, from scratch, as a cybersecurity portfolio project. NIST SP 800-61, CISA, and MITRE ATT&CK informed the phase structure and are listed as references only.
+
 A set of practical, original incident response playbooks for a Security Operations Center (SOC) analyst. Each playbook walks through the same eight phases so an analyst can pick up any alert type and know what to do next.
 
 ![Incident response workflow](diagrams/incident-response-workflow.png)
@@ -68,3 +74,12 @@ These procedures are written from scratch. The following frameworks informed the
 
 ## Author
 John Danko, Cybersecurity Portfolio Project
+
+## Evidence
+- [Phishing Response](playbooks/phishing-response.md)
+- [Malware Response](playbooks/malware-response.md)
+- [Brute-Force Response](playbooks/brute-force-response.md)
+- [Ransomware Response](playbooks/ransomware-response.md)
+- [Suspicious Login Response](playbooks/suspicious-login-response.md)
+- [Incident Response Checklist](checklists/incident-response-checklist.md)
+- [Incident response workflow diagram](diagrams/incident-response-workflow.png)
